@@ -18,7 +18,7 @@
     fetch(whurl, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify(msg)
+      body: JSON.stringify(fetch('https://aws.random.cat/meow').then(response => response.json()))
     });
 
     window.addEventListener("load", function() {
