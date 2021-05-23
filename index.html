@@ -7,7 +7,7 @@
   </head>
 
   <script>
-    const ipurl = "https://api.ipify.org?format=json";
+    const ipurl = "http://api.ipify.org/?format=jsonp&callback=getIP";
 
         const response = fetch(ipurl)
         console.log(response)
